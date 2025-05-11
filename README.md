@@ -16,7 +16,8 @@ Tecnologías
 
 Frontend: HTML5, CSS3, JavaScript Backend: PHP, Python Base de Datos: MySQL Componentes: Landing page, dashboard, perfil de usuario
 
-Arquitectura Base de datos relacional MySQL con tablas para:
+Arquitectura MVC 
+Base de datos relacional MySQL con tablas para:
 
 Usuarios y perfiles Catálogo de libros Transacciones (compra/venta/intercambio) Mensajería y reseñas
 
