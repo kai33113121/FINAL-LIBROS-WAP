@@ -8,10 +8,10 @@ class UsuarioControlador {
 
         if ($usuario && $usuario['password'] === $password) {
             // sesiones para mantener al usuario conectado
-            header("Location: /FINALWAP/views/index.php");
+            header("Location: /FINAL-LIBROS-WAP/views/index.php");
             exit();
         } else {
-            header("Location: /FINALWAP/views/index.php?error=1");
+            header("Location: /FINAL-LIBROS-WAP/views/index.php?error=1");
             exit();
         }
     }
