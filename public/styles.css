@@ -1,0 +1,465 @@
+/* === visual === */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #3f3a3a; /* fondo oscuro general */
+    color: #fff;
+}
+
+.navbar {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #7b2eff;
+}
+
+.right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-contact {
+    background-color: #7b2eff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #5d1dd9;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Sección principal */
+.main-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #3f3a3a;
+}
+
+.banner-libros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.banner-libros img {
+    height: 250px;
+    border: 3px solid #7b2eff;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.banner-libros img:hover {
+    transform: scale(1.05);
+}
+
+/* Descripción */
+.descripcion {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.descripcion h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.descripcion p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: #cfcfcf;
+}
+
+/* Libros destacados */
+.libros-destacados {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.libros-destacados img {
+    height: 200px;
+    border-radius: 10px;
+    border: 3px solid #eee;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.libros-destacados img:hover {
+    transform: scale(1.05);
+    border-color: #7b2eff;
+}
+
+/* Botón Learn More (opcional) */
+.learn-more {
+    background-color: #7b2eff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #5d1dd9;
+}
+
+/*ARCHIVO SERVICES*/
+/* === Servicios Page Styles === */
+.servicios-page {
+    background-color: #4f4a4a; /* fondo general oscuro */
+    color: #000;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid transparent;
+    border-radius: 8px;
+}
+
+.service-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Card activa (intercambia) */
+.service-card.selected img {
+    border-color: #a678ff; /* violeta claro */
+}
+
+.volver {
+    margin-top: 30px;
+}
+
+.btn-volver {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #a678ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #875ef0;
+}
+
+/*Archivo login en views*/
+/* === LOGIN PAGE STYLES === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0; /* gris claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4b4b4b;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #6a6a6a;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: white;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.formulario button {
+    padding: 10px;
+    background-color: #0099cc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.formulario button:hover {
+    background-color: #007ca8;
+}
+
+.formulario a {
+    color: #2400ff;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/*view registrarse*/
+/* === REGISTRO PAGE STYLES === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.col-md-6 {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header h4 {
+    margin: 0;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #0099cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #007ca8;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 20px;
+}
+
+.mt-3 a {
+    color: #2400ff;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/*View Dashboard*/
+/* === DASHBOARD STYLES === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+a {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background-color: #005dc1;
+    transform: scale(1.05);
+}
+
+/* Diferentes colores por sección opcionalmente */
+a[href*="libros"] {
+    background-color: #6f42c1;
+}
+a[href*="usuarios"] {
+    background-color: #20c997;
+}
+a[href*="registro"] {
+    background-color: #ff5733;
+}
