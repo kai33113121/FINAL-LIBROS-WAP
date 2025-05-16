@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '/../../controllers/librocontroller.php';
 
 $controller = new librocontroller();
@@ -11,7 +10,6 @@ $libros = $controller->obtenerTodos();
 <head>
     <meta charset="UTF-8">
     <title>Listado de Libros</title>
-
 </head>
 <body>
     <div class="container mt-4">
@@ -23,45 +21,35 @@ $libros = $controller->obtenerTodos();
                     <th>ID</th>
                     <th>Título</th>
                     <th>Autor</th>
-                    <th>Editorial</th>
-                    <th>Año</th>
-                    <th>ISBN</th>
-                    <th>Precio</th>
                     <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Existencias</th>
+                    <th>Sinopsis</th>
                     <th>Estado</th>
-                    <th>Imagen</th>
-                    <th>Cantidad</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($libros as $libro): ?>
                     <tr>
-                        <td><?= $libro->id ?></td>
-                        <td><?= $libro->titulo ?></td>
-                        <td><?= $libro->autor ?></td>
-                        <td><?= $libro->editorial ?></td>
-                        <td><?= $libro->anio_publicacion ?></td>
-                        <td><?= $libro->isbn ?></td>
-                        <td><?= $libro->precio?></td>
-                        <td><?= $libro->descripcion ?></td>
-                        <td><?= $libro->estado ?></td>
-                        <td><?= $libro->imagen ?></td>
-                        <td><?= $libro->cantidad_disponible ?></td>
+                        <td><?= $libro['id'] ?></td>
+                        <td><?= $libro['titulo'] ?></td>
+                        <td><?= $libro['autor'] ?></td>
+                        <td><?= $libro['descripcion'] ?></td>
+                        <td><?= $libro['precio'] ?></td>
+                        <td><?= $libro['existencias'] ?></td>
+                        <td><?= $libro['sinopsis'] ?></td>
+                        <td><?= $libro['estado'] ?></td>
                         <td>
-                            <a href="view/editarlibro.php?id=<?= $libro->id ?>" ">Editar</a>
-
-                            <a href="controller/eliminarlibro.php?id=<?= $libro->id ?>" onclick="return confirm('¿Estás seguro de eliminar este libro?')">Eliminar</a>
-                
+                            <a href="view/editarlibro.php?id=<?= $libro['id'] ?>">Editar</a>
+                            <a href="controller/eliminarlibro.php?id=<?= $libro['id'] ?>" onclick="return confirm('¿Estás seguro de eliminar este libro?')">Eliminar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
-    
-
         </table>
-        <a href="/FINALWAP/views/libros/crear.php" class="">Agregar Libro</a>
 
+        <a href="/FINAL-LIBROS-WAP/views/libros/crear.php" class="">Agregar Libro</a>
     </div>
 </body>
 </html>

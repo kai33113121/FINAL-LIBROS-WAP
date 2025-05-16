@@ -1,6 +1,6 @@
 <?php class Database {
     private $host = "localhost";
-    private $db = "librosw"; // <- ¡Aquí debe estar la base de datos!
+    private $db = "wap_libros"; // <- ¡Aquí debe estar la base de datos!
     private $user = "root";
     private $pass = "";
     public $conn;
