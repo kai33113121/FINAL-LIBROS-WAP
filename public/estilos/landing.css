@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #341041;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+header .search-bar {
+    padding: 5px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+header .login-btn {
+    background-color: #555;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*PARTE DE LOS BUTTONS SESSION*/
+
+.auth-buttons {
+    display: flex;
+    gap: 5px; /* espacio entre botones */
+}
+
+.auth-buttons a {
+    background-color: #555;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons a:hover {
+    background-color: #777;
+}
+
+
+/*imagen grande seccion home */
+
+.imagen {
+    width: 100%;
+    height: 400px; /* o más si quieres que sea más alto */
+    position: relative;
+    overflow: hidden;
+    background-color: #2d063e; /* Color de fondo por si la imagen no carga */
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1; /* Asegúrate de que la imagen sea visible */
+    transition: opacity 1s ease-in-out;
+}
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    z-index: 2; /* asegúrate de que esté encima de la imagen */
+}
+
+/*SECCION PRODUCTOS*/
+.products-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.product-block {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-block:hover {
+    transform: translateY(-5px);
+}
+
+.product-block img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-block h2 {
+    font-size: 20px;
+    color: #341041;
+    margin-bottom: 10px;
+}
+
+.product-block p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+/* seccion categorias*/
+
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.category-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.categories h2{
+    display: inline-block;
+    padding: 10px 20px;
+    border-bottom: 4px solid #ffffff;
+    background-color: #6b6580;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/*SECCION DE SERVICIOS*/
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #8a86a0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* para que en pantallas pequeñas se acomoden en varias filas */
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: rgb(53, 51, 51);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-text {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.services h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-bottom: 4px solid #ffffff;
+    background-color: #6b6580;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+
+/*SECCION DE LIBROS DESTACADOS*/
+.featured-books h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-bottom: 4px solid #ffffff;
+    background-color: #6b6580;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.featured-books {
+    padding: 40px 20px;
+    background-color: #17041e;
+    text-align: center;
+}
+
+.book-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.book-item {
+    min-width: 200px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*SECCION CONTACTANOS*/
+
+.contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-imgs img {
+    width: 250px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.contact-desc {
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-desc p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.barra {
+    width: 40px;
+    height: 5px;
+    background-color: #8b5cf6; /* violeta */
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+.barra1 { transform: rotate(0deg); }
+.barra2 { transform: rotate(5deg); }
+.barra3 { transform: rotate(-5deg); }
+.barra4 { transform: rotate(3deg); }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+form button {
+    background-color: #4f46e5; /* azul violeta */
+    color: white;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #4338ca;
+}
+
+/*footer final*/
+
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.95em;
+    margin-top: 40px;
+    border-top: 2px solid #8b5cf6; /* línea superior decorativa */
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
+}

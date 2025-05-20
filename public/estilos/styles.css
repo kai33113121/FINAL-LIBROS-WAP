@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: var(--background-color);
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+header .search-bar {
+    padding: 5px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+header .login-btn {
+    background-color: var(--secondary-color);
+    padding: 5px 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.carousel {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.carousel img.active {
+    opacity: 1;
+}
+.categories, .services, .featured-books, .contact {
+    padding: 20px;
+    text-align: center;
+}
+.categories h2, .services h2, .featured-books h2, .contact h2 {
+    margin-bottom: 20px;
+}
+.category-list, .book-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.category-item, .book-item {
+    background-color: var(--card-background);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+.book-item img {
+    width: 150px;
+    height: 200px;
+}
+.services p, .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+.contact form button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

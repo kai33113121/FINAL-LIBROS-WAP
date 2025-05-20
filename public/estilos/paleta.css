@@ -1,0 +1,10 @@
+:root {
+    /* Paleta de colores */
+    --primary-color: rgba(50, 25, 98, 0.718); /* Color principal (usado en el header y footer) */
+    --secondary-color: #333030; /* Color secundario (usado en botones) */
+    --background-color: #333338; /* Color de fondo */
+    --text-color: #b6b4b4; /* Color de texto claro */
+    --shadow-color: rgba(63, 13, 83, 0.1); /* Color para sombras */
+    --border-color: #050101; /* Color para bordes */
+    --card-background: #33234a; /* Fondo de tarjetas (categorías, libros) */
+}
