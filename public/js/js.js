@@ -1,4 +1,4 @@
-<script>
+/* <script>
         // Script para el carrusel
         const images = document.querySelectorAll('.carousel img');
         let currentIndex = 0;
@@ -10,4 +10,4 @@
         }
 
         setInterval(rotateImages, 3000); // Cambia cada 3 segundos
-    </script>
+    </script> */

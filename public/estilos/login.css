@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 10px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 1200px;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "formulario aside";
+    border-radius: 12px;
+}
+
+.formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.formulario h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.formulario h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form button {
+    padding: 12px;
+    background: linear-gradient(to right, #9416d7, #32209a);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background: linear-gradient(to right, #7a12ad, #28187a);
+}
+
+.form a, .formulario a {
+    color: #2400ff;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.alert-danger {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.aside {
+    grid-area: aside;
+    background: linear-gradient(to right, #9416d7, #32209a);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 12px 12px 0;
+}
+
+.aside img {
+    max-width: 80%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "formulario"
+            "aside";
+    }
+    .aside {
+        border-radius: 0 0 12px 12px;
+        padding: 20px;
+    }
+}

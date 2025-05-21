@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/FINAL-LIBROS-WAP/public/styles.css">
+    <link rel="stylesheet" href="/FINAL-LIBROS-WAP/public/estilos/logandsig.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -14,11 +14,11 @@
                 <h4 class="mb-0">Registro de Usuario</h4>
             </div>
             <div class="card-body">
-                <?php if(isset($error)): ?>
+                <php if(isset($error)): ?>
                     <div class="alert alert-danger">
-                        <?php echo $error; ?>
+                        <php echo $error; ?>
                     </div>
-                <?php endif; ?>
+                <php endif; ?>
                 
                 <form action="index.php?controller=auth&action=registro" method="POST">
                     <div class="mb-3">
@@ -54,5 +54,41 @@
         </div>
     </div>
 </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FINAL-LIBROS-WAP/public/estilos/login.css">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h1>¡LIBROS WAP!</h1>
+            <h2>Registro de Usuario</h2>
+            <?php if(isset($error)): ?>
+                <div class="alert-danger">
+                    <?php echo $error; ?>
+                </div>
+            <?php endif; ?>
+            <form class="form" action="index.php?controller=auth&action=registro" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="password" name="confirmar_password" placeholder="Confirmar Contraseña" required>
+                <button type="submit">Registrarse</button>
+                <a href="/FINAL-LIBROS-WAP/views/login/login.php">¿Ya tienes una cuenta? Iniciar Sesión</a>
+                <a href="/FINAL-LIBROS-WAP/views/landing/visual.php">Volver</a>
+            </form>
+        </div>
+        <aside class="aside">
+            <img src="/FINAL-LIBROS-WAP/public/img/logow.png" alt="IMAGEN DE REGISTRO">
+        </aside>
+    </div>
 </body>
 </html>
